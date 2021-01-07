@@ -88,9 +88,9 @@ const IndexPage = () => (
 
         <section className="section">
             <div className="container">
-                <h4 className="subtitle is-3 has-text-weight-bold">
+                <div className="subtitle is-3 has-text-weight-bold">
                     Links
-                </h4>
+                </div>
                 <p>
                     <Link href="https://github.com/ukiyoyo">
                         <a>GitHub</a>
