@@ -2,11 +2,10 @@ import Link from 'next/link'
 import Layout from '../components/Layout'
 
 const IndexPage = () => (
-    <Layout title="ukiyoyo.dev">
+    <Layout title="ukiyoyo">
         <section className="hero is-info is-bold">
             <div className="hero-body">
                 <div className="container">
-
                     <h1 className="title is-2">
                         <strong>ukiyoyo</strong>
                     </h1>
@@ -93,10 +92,6 @@ const IndexPage = () => (
                     Links
                 </h4>
                 <p>
-                    <Link href="https://twitter.com/_ukiyoyo">
-                        <a>Twitter</a>
-                    </Link>
-                    <br />
                     <Link href="https://github.com/ukiyoyo">
                         <a>GitHub</a>
                     </Link>

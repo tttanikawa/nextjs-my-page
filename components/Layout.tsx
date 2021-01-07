@@ -55,7 +55,6 @@ const Layout = ({ children, title = 'ukiyoyo' }: Props) => (
                 </div>
             </nav>
 
-
         </header>
         {children}
     </div>
