@@ -33,7 +33,7 @@ const Layout = ({ children, title = 'ukiyoyo' }: Props) => (
                             </a>
                             </Link>
 
-                            <Link href="/about">
+                            {/* <Link href="/about">
                                 <a className="navbar-item">
                                     Blog
                             </a>
@@ -49,8 +49,7 @@ const Layout = ({ children, title = 'ukiyoyo' }: Props) => (
                                 <a className="navbar-item">
                                     api
                             </a>
-                            </Link>
-                            <a> &nbsp;</a>
+                            </Link> */}
                         </div>
                     </div>
                 </div>
