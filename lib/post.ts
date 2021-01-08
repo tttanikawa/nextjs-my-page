@@ -6,8 +6,13 @@ import html from "remark-html"
 
 const postsDirectory = path.join(process.cwd(), 'posts');
 
+function isMarkdownFile(fileName: string) {
+    const s = fileName.split('.');
+    return (s[s.length - 1].toLowerCase() == 'md');
+}
+
 export function getSortedPostsData() {
-    const fileNames = fs.readdirSync(postsDirectory);
+    const fileNames = fs.readdirSync(postsDirectory).filter(fileName => isMarkdownFile(fileName));
     const allPostsData = fileNames.map(fileName => {
         const id = fileName.replace(/\.md$/, '');
         const fullPath = path.join(postsDirectory, fileName);
