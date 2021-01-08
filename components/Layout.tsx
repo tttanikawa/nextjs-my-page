@@ -39,13 +39,13 @@ const Layout = ({ children, title = 'ukiyoyo' }: Props) => (
                                 </a>
                             </Link>
 
-                            <Link href="/about">
+                            <Link href="/posts">
                                 <a className="navbar-item">
                                     <span className="icon-text">
                                         <span className="icon">
                                             <i className="fas fa-sticky-note" data-fa-transform="down-1"></i>
                                         </span>
-                                        <span>Blog</span>
+                                        <span>Posts</span>
                                     </span>
                                 </a>
                             </Link>
@@ -65,7 +65,6 @@ const Layout = ({ children, title = 'ukiyoyo' }: Props) => (
                     </div>
                 </div>
             </nav>
-
         </header>
         {children}
     </div>
