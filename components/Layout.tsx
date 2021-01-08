@@ -30,17 +30,27 @@ const Layout = ({ children, title = 'ukiyoyo' }: Props) => (
                         <div className="navbar-end">
                             <Link href="/">
                                 <a className="navbar-item">
-                                    Home
-                            </a>
+                                    <span className="icon-text">
+                                        <span className="icon">
+                                            <i className="fas fa-home" data-fa-transform="down-1"></i>
+                                        </span>
+                                        <span>Home</span>
+                                    </span>
+                                </a>
                             </Link>
 
-                            {/* <Link href="/about">
+                            <Link href="/about">
                                 <a className="navbar-item">
-                                    Blog
-                            </a>
+                                    <span className="icon-text">
+                                        <span className="icon">
+                                            <i className="fas fa-sticky-note" data-fa-transform="down-1"></i>
+                                        </span>
+                                        <span>Blog</span>
+                                    </span>
+                                </a>
                             </Link>
 
-                            <Link href="/users">
+                            {/* <Link href="/users">
                                 <a className="navbar-item">
                                     Users List
                             </a>

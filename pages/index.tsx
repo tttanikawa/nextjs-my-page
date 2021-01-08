@@ -10,7 +10,15 @@ const IndexPage = () => (
                         <strong>ukiyoyo</strong>
                     </h1>
                     <h2 className="subtitle">
-                        Software Engineer at DENSO
+                        Software Engineer at DENSO<br />
+                        <br />
+                        <Link href="https://github.com/ukiyoyo">
+                            <a>
+                                <span className="icon">
+                                    <i className="fab fa-github fa-2x"></i>
+                                </span>
+                            </a>
+                        </Link>
                     </h2>
                 </div>
             </div>
@@ -18,7 +26,7 @@ const IndexPage = () => (
 
         <section className="section">
             <div className="container">
-                <div className="subtitle is-3 has-text-weight-bold">
+                <div className="subtitle is-4 has-text-weight-bold">
                     Experience
                 </div>
                 <p>
@@ -47,7 +55,7 @@ const IndexPage = () => (
 
         <section className="section">
             <div className="container">
-                <div className="subtitle is-3 has-text-weight-bold">
+                <div className="subtitle is-4 has-text-weight-bold">
                     Education
                 </div>
                 <p>
@@ -75,7 +83,7 @@ const IndexPage = () => (
 
         <section className="section">
             <div className="container">
-                <div className="subtitle is-3 has-text-weight-bold">
+                <div className="subtitle is-4 has-text-weight-bold">
                     Publications
                 </div>
                 <p>
@@ -88,13 +96,14 @@ const IndexPage = () => (
 
         <section className="section">
             <div className="container">
-                <div className="subtitle is-3 has-text-weight-bold">
+                <div className="subtitle is-4 has-text-weight-bold">
                     Links
                 </div>
                 <p>
                     <Link href="https://github.com/ukiyoyo">
                         <a>GitHub</a>
                     </Link>
+
                     <br />
                     <Link href="https://atcoder.jp/users/ukiyo">
                         <a>AtCoder</a>
