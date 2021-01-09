@@ -34,13 +34,14 @@ const PostsPage = (props: {
 }) => (
     <Layout title={props.postData.title}>
         <section className="section">
-            <div className="container px-6">
+            <div className="container is-max-desktop">
                 <h1 className="title is-3 has-text-weight-bold">
                     {props.postData.title}
                 </h1>
                 <div className="subtitle is-5">
                     <Date dateString={props.postData.date} />
                 </div>
+                <br></br>
                 <div className="content" dangerouslySetInnerHTML={{ __html: props.postData.contentHtml }} />
             </div>
         </section>

@@ -16,17 +16,20 @@ export const getStaticProps: GetStaticProps = async () => {
 const PostsListPage = (props: { allPostsData: { date: string, title: string, id: string }[] }) => (
     <Layout title="Posts">
         <section className="section">
-            <div className="container px-6">
+            <div className="container is-max-desktop">
                 <div className="title is-3 has-text-weight-bold">
                     Posts
                 </div>
+                <br></br>
                 <p>
-                    <ul className="content">
+                    <ul className="content is-medium">
                         {props.allPostsData.map(({ id, date, title }) => (
                             <li key={id}>
-                                <Link href={`posts/${id}`}>
-                                    <a>{title}</a>
-                                </Link>
+                                <strong>
+                                    <Link href={`posts/${id}`}>
+                                        <a>{title}</a>
+                                    </Link>
+                                </strong>
                                 <br />
                                 <small>
                                     <Date dateString={date} />
