@@ -2,6 +2,7 @@ import Layout from "../../components/Layout";
 import { getAllPostsIds, getPostData } from "../../lib/post";
 import Date from "../../components/Date";
 import { GetStaticPaths, GetStaticProps } from "next";
+import { PostDetail } from "../../interfaces/post";
 
 export const getStaticPaths: GetStaticPaths = async () => {
     const paths = getAllPostsIds();
@@ -27,11 +28,7 @@ export const getStaticProps: GetStaticProps = async ({ params }) => {
     }
 }
 
-const PostsPage = (props: {
-    postData: {
-        id: string, contentHtml: string, date: string, title: string
-    }
-}) => (
+const PostsPage = (props: { postData: PostDetail }) => (
     <Layout title={props.postData.title}>
         <section className="section">
             <div className="container is-max-desktop">

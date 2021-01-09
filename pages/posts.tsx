@@ -3,6 +3,7 @@ import Layout from '../components/Layout'
 import Date from "../components/Date"
 import { GetStaticProps } from "next"
 import { getSortedPostsData } from "../lib/post"
+import { PostData } from '../interfaces/post'
 
 export const getStaticProps: GetStaticProps = async () => {
     const allPostsData = getSortedPostsData();
@@ -13,7 +14,7 @@ export const getStaticProps: GetStaticProps = async () => {
     }
 }
 
-const PostsListPage = (props: { allPostsData: { date: string, title: string, id: string }[] }) => (
+const PostsListPage = (props: { allPostsData: PostData[] }) => (
     <Layout title="Posts">
         <section className="section">
             <div className="container is-max-desktop">
@@ -23,16 +24,16 @@ const PostsListPage = (props: { allPostsData: { date: string, title: string, id:
                 <br></br>
                 <p>
                     <ul className="content is-medium">
-                        {props.allPostsData.map(({ id, date, title }) => (
-                            <li key={id}>
+                        {props.allPostsData.map(data => (
+                            <li key={data.id}>
                                 <strong>
-                                    <Link href={`posts/${id}`}>
-                                        <a>{title}</a>
+                                    <Link href={`posts/${data.id}`}>
+                                        <a>{data.title}</a>
                                     </Link>
                                 </strong>
                                 <br />
                                 <small>
-                                    <Date dateString={date} />
+                                    <Date dateString={data.date} />
                                 </small>
                             </li>
                         ))}

@@ -3,15 +3,16 @@ import path from "path"
 import matter from "gray-matter"
 import remark from "remark"
 import html from "remark-html"
+import { PostData, PostDetail } from "../interfaces/post"
 
 const postsDirectory = path.join(process.cwd(), 'posts');
 
-function isMarkdownFile(fileName: string) {
+function isMarkdownFile(fileName: string): boolean {
     const s = fileName.split('.');
     return (s[s.length - 1].toLowerCase() == 'md');
 }
 
-export function getSortedPostsData() {
+export function getSortedPostsData(): PostData[] {
     const fileNames = fs.readdirSync(postsDirectory).filter(fileName => isMarkdownFile(fileName));
     const allPostsData = fileNames.map(fileName => {
         const id = fileName.replace(/\.md$/, '');
@@ -21,7 +22,7 @@ export function getSortedPostsData() {
         const matterResult = matter(fileContents);
         return {
             id,
-            ...(matterResult.data as { date: string, title: string })
+            ...(matterResult.data as { title: string, date: string })
         }
     })
 
@@ -45,7 +46,7 @@ export function getAllPostsIds() {
     })
 }
 
-export async function getPostData(id: string) {
+export async function getPostData(id: string): Promise<PostDetail> {
     const fullPath = path.join(postsDirectory, `${id}.md`);
     const fileContents = fs.readFileSync(fullPath, 'utf8');
     const matterResult = matter(fileContents);
