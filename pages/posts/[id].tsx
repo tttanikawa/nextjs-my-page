@@ -39,7 +39,7 @@ const PostsPage = (props: { postData: PostDetail }) => (
                     <Date dateString={props.postData.date} />
                 </div>
                 <br></br>
-                <div className="content" dangerouslySetInnerHTML={{ __html: props.postData.contentHtml }} />
+                <div className="content is-size-5" dangerouslySetInnerHTML={{ __html: props.postData.contentHtml }} />
             </div>
         </section>
     </Layout>
