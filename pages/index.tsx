@@ -101,13 +101,36 @@ const IndexPage = () => (
         <section className="section">
             <div className="container">
                 <div className="subtitle is-4 has-text-weight-bold">
+                    Awards
+                </div>
+                <p className="content">
+                    <ul>
+                        <li>
+                            <Link href="https://sites.google.com/site/alcon2015prmu/home">
+                                <a>最優秀賞（電子情報通信学会 第19回PRMUアルゴリズムコンテスト）</a>
+                            </Link>
+                        </li>
+                        <li>優秀卒業研究発表賞（電子情報通信学会東海支部 平成27年度卒業研究発表会）</li>
+                        <li>最優秀賞（電子情報通信学会 第20回PRMUアルゴリズムコンテスト）</li>
+                        <li>
+                            <Link href="https://sites.google.com/view/alcon2017prmu">
+                                <a>優秀賞（電子情報通信学会 第21回PRMUアルゴリズムコンテスト）</a>
+                            </Link>
+                        </li>
+                    </ul>
+                </p>
+            </div>
+        </section>
+
+        <section className="section">
+            <div className="container">
+                <div className="subtitle is-4 has-text-weight-bold">
                     Links
                 </div>
                 <p>
                     <Link href="https://github.com/ukiyoyo">
                         <a>GitHub</a>
                     </Link>
-
                     <br />
                     <Link href="https://atcoder.jp/users/ukiyo">
                         <a>AtCoder</a>
