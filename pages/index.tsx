@@ -79,8 +79,8 @@ const IndexPage = () => (
                 <p className="content">
                     <strong>Business level</strong><br />
                     <ul>
-                        <li>C/C++</li>
-                        <li>Python</li>
+                        <li>C/C++ (OpenCV)</li>
+                        <li>Python (NumPy, SciPy, Pandas, scikit-learn, Keras, etc.)</li>
                         <li>Matlab</li>
                         <li>Git</li>
                         <li>Docker</li>
@@ -93,6 +93,7 @@ const IndexPage = () => (
                         <li>JavaScript</li>
                         <li>TypeScript</li>
                         <li>RDBMS (MySQL, PostgreSQL)</li>
+                        <li>AtCoder (Highest: 1141)</li>
                     </ul>
                 </p>
             </div>
