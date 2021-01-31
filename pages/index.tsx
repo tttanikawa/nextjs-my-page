@@ -33,22 +33,10 @@ const IndexPage = () => (
                     2018.4 - <br />
                     <strong>Software Engineer at DENSO Corp.</strong><br />
                     Development of image recognition algorithms for Advanced Driving Assistant System (ADAS) <br />
-                    <div className="tags">
-                        <span className="tag">C/C++</span>
-                        <span className="tag">Python</span>
-                        <span className="tag">Matlab</span>
-                        <span className="tag">Docker</span>
-                        <span className="tag">Windows</span>
-                    </div>
-
+                    <br />
                     2016.9 - 2017.3<br />
                     <strong>Part-time engineer at Nagoya University</strong><br />
-                    Development of OCR systems to recognize hand-written characters, which is used in the university<br />
-                    <div className="tags">
-                        <span className="tag">Python</span>
-                        <span className="tag">Linux</span>
-                        <span className="tag">macOS</span>
-                    </div>
+                    Development of OCR systems to recognize hand-written characters, which is used in the university
                 </p>
             </div>
         </section>
@@ -62,21 +50,10 @@ const IndexPage = () => (
                     2016.4 - 2018.3<br />
                     <strong>Master of Information Science, Nagoya University</strong><br />
                     Research of image recognition, especially in multi-object tracking<br />
-                    <div className="tags">
-                        <span className="tag">Python</span>
-                        <span className="tag">Matlab</span>
-                        <span className="tag">Linux</span>
-                        <span className="tag">macOS</span>
-                    </div>
-
+                    <br />
                     2012.4 - 2016.3<br />
                     <strong>Bachelor of Engineering, Nagoya University</strong><br />
-                    Research of image recognition, especially in object detection and tracking<br />
-                    <div className="tags">
-                        <span className="tag">C/C++</span>
-                        <span className="tag">Linux</span>
-                        <span className="tag">Windows</span>
-                    </div>
+                    Research of image recognition, especially in object detection and tracking
                 </p>
             </div>
         </section>
