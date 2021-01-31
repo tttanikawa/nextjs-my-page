@@ -108,14 +108,14 @@ const IndexPage = () => (
                     <ul>
                         <li>
                             <Link href="https://sites.google.com/site/alcon2015prmu/home">
-                                <a>最優秀賞（電子情報通信学会 第19回PRMUアルゴリズムコンテスト）</a>
+                                <a>電子情報通信学会 第19回PRMUアルゴリズムコンテスト 最優秀賞</a>
                             </Link>
                         </li>
-                        <li>優秀卒業研究発表賞（電子情報通信学会東海支部 平成27年度卒業研究発表会）</li>
-                        <li>最優秀賞（電子情報通信学会 第20回PRMUアルゴリズムコンテスト）</li>
+                        <li>電子情報通信学会東海支部 平成27年度卒業研究発表会 優秀卒業研究発表賞</li>
+                        <li>電子情報通信学会 第20回PRMUアルゴリズムコンテスト 最優秀賞</li>
                         <li>
                             <Link href="https://sites.google.com/view/alcon2017prmu">
-                                <a>優秀賞（電子情報通信学会 第21回PRMUアルゴリズムコンテスト）</a>
+                                <a>電子情報通信学会 第21回PRMUアルゴリズムコンテスト 優秀賞</a>
                             </Link>
                         </li>
                     </ul>
