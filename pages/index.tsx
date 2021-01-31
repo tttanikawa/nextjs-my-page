@@ -74,6 +74,33 @@ const IndexPage = () => (
         <section className="section">
             <div className="container">
                 <div className="subtitle is-4 has-text-weight-bold">
+                    Skills
+                </div>
+                <p className="content">
+                    <strong>Business level</strong><br />
+                    <ul>
+                        <li>C/C++</li>
+                        <li>Python</li>
+                        <li>Matlab</li>
+                        <li>Git</li>
+                        <li>Docker</li>
+                        <li>Linux (Ubuntu)</li>
+                    </ul>
+                    <strong>Hobby level</strong><br />
+                    <ul>
+                        <li>Rust</li>
+                        <li>Java</li>
+                        <li>JavaScript</li>
+                        <li>TypeScript</li>
+                        <li>RDBMS (MySQL, PostgreSQL)</li>
+                    </ul>
+                </p>
+            </div>
+        </section>
+
+        <section className="section">
+            <div className="container">
+                <div className="subtitle is-4 has-text-weight-bold">
                     Links
                 </div>
                 <p>
