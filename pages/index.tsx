@@ -2,17 +2,17 @@ import Link from 'next/link'
 import Layout from '../components/Layout'
 
 const IndexPage = () => (
-    <Layout title="ukiyoyo">
+    <Layout title="tttanikawa">
         <section className="hero is-info is-bold">
             <div className="hero-body">
                 <div className="container">
                     <h1 className="title is-2">
-                        <strong>ukiyoyo</strong>
+                        <strong>tani</strong>
                     </h1>
                     <h2 className="subtitle">
                         Software Engineer at DENSO<br />
                         <br />
-                        <Link href="https://github.com/ukiyoyo">
+                        <Link href="https://github.com/tttanikawa">
                             <a>
                                 <span className="icon">
                                     <i className="fab fa-github fa-2x"></i>
@@ -129,11 +129,11 @@ const IndexPage = () => (
                     Links
                 </div>
                 <p>
-                    <Link href="https://github.com/ukiyoyo">
+                    <Link href="https://github.com/tttanikawa">
                         <a>GitHub</a>
                     </Link>
                     <br />
-                    <Link href="https://atcoder.jp/users/ukiyo">
+                    <Link href="https://atcoder.jp/users/tttanikawa">
                         <a>AtCoder</a>
                     </Link>
                 </p>
